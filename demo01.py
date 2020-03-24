@@ -1,0 +1,7 @@
+print("hello world!")  
+print(2333)
+print(2.333)
+print(True)
+print(())
+print([])
+print({})
