@@ -83,3 +83,45 @@ for i in range(1,10):
 储到到字典中，{username:password}
 """
 
+
+light = {"红灯":30,"绿灯":35,"黄灯":3}
+for i in light:
+    for j in range(light[i]):
+        print(i,"倒计时还有",light[i]-j,"秒")
+
+
+username = input("请输入账号：")
+password = input("请输入密码：")
+if len(username) >=5 and len(username) <=8:
+    if username[0] in "qazwsxedcrfvtgbyhnujmikopl":
+        if len(password) >= 8 and len(password) <= 12:
+            print("注册成功！",{username:password})
+        else:
+            print("密码必须8-12位！")
+    else:
+        print("账号的首字母必须小写字母开头！")
+else:
+    print("账号的长度不符合规范，请输入5-8位的账号")
+
+
+
+"""
+练习：
+定义一个方法，用来判断用户输入的账号密码是否符合规范。
+"""
+
+def checkname(username,password):
+    """
+    自动的判断账号长度是5-8位，并且账号必须小写开头
+    """
+    if len(username) >=5 and len(username) <=8:
+        if username[0] in "qazwsxedcrfvtgbyhnujmikopl":
+            if len(password) >= 8 and len(password) <= 16:
+                return True
+            else:
+                return "密码不符合规范"
+        else:
+            return "账号的首字母必须小写字母开头！"
+    else:
+        return "账号的长度不符合规范，请输入5-8位的账号"
+

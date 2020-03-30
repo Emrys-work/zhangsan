@@ -57,3 +57,62 @@
 # for i in a:
 #     print(i)
 
+# for i in range(1,10):
+#     for j in range(1,i+1):
+#         if i == 3:
+#             continue
+#         print(i,"X",j,"=",i*j,end="  ")
+#     print()
+
+
+# for i in range(10):
+#     if i == 3:
+#         break
+#     print("哈哈哈")
+
+
+
+
+
+# def 方法的声明
+# checkname 方法的名字
+# username 方法的参数
+# """方法的说明"""
+# 方法的逻辑代码
+
+
+
+
+
+"""
+返回值，返回后我们可以对这个值做其他的操作
+而，print不能
+"""
+
+
+
+
+# username = input("请输入你的账号：")
+# password = input("请输入你的密码：")
+# if checkname(username) == True:
+#     if len(password) >= 8 and len(password) <= 12:
+#         print("注册成功！",{username:password})
+#     else:
+#         print("密码必须8-12位！")
+# else:
+#     print(checkname(username))
+
+
+def jiafa(a,b):
+    """
+    这个方法的作用是实现两个数字相加
+    """
+    if type(a) is int and type(b) is int:
+        print(a+b)
+    else:
+        return "输入的数据类型不正确"
+
+
+
+
+
